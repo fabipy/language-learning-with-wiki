@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron">
+                <center><a href="/stats">Your Scores</a></center>
+                <h1>Learning with Wikipedia</h1>
+                <form action="/wiki" class="col-md-8 col-md-offset-2">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input id="url" name="url" type="url" class="form-control" placeholder="Enter a Wikipedia URL">
+                            <div class="input-group-btn">
+                                <select class="selectpicker" name="cloze">
+                                    <option value="Articles">Articles</option>
+                                    <option value="Pronouns">Pronouns</option>
+                                    <option value="Prepositions">Prepositions</option>
+                                    <option value="Random">Random</option>
+                                </select>
+                                <button class="btn btn-default submit-url" type="submit">Go</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-md-8 col-md-offset-2">
+                    <img src="images/wiki-logo@2x.png" class="wiki-logo" alt="Wikipedia Logo">
+                    <br>
+                    <br>
+                    <center>
+                        <span>Inspired by </span><a href="http://sifnos.sfs.uni-tuebingen.de/WERTi/">WERTi</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

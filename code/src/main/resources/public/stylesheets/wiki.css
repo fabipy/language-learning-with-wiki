@@ -1,0 +1,31 @@
+span.answer {
+    display: inline-block;
+    padding: 3px;
+}
+
+span.answer.wrong {
+    border: red 2px solid;
+}
+
+span.answer.correct {
+    border: lightgreen 2px solid;
+}
+
+#submit {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: block;
+    color: white;
+    padding: 15px;
+    border: 1px solid #46b8da;
+    border-radius: 4px;
+    background-color: #5bc0de;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#submit:hover {
+    opacity: 1;
+}
